@@ -121,7 +121,7 @@ const SideBar = () => {
               <IoIosSearch className="w-[25px] h-[25px]" />
               <input
                 type="text"
-                placeholder="serach users..."
+                placeholder="search users..."
                 className="w-full h-full p-[10px] text-[17px] outline-none border-none"
                 onChange={(e) => setInput(e.target.value)}
                 value={input}
