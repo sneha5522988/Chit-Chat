@@ -14,7 +14,8 @@ export const signUp = async (req, res) => {
     }
 
     // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+   const emailRegex =
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|in|org|net|edu)$/;
 
     if (!emailRegex.test(email)) {
       return res.status(400).json({
